@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <form id="registroForm" action="submit_form.php" method="POST">
+
+            <div class="form-group">
+                <label for="servicio">Tipo de servicio</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Seleccione el servico de interés</option>
+                    <option value="1">Comunicación corporativa</option>
+                    <option value="2">Branding</option>
+                    <option value="3">Markething Digital</option>
+                    <option value="4">Producción audiovisual</option>
+                    <option value="5">Sitios Web</option>
+                    <option value="6">Planes de medios</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="servicio">Figura Legal</label>
+                <select id="fl" name="fl" required>
+                    <option value="1">Persona Jurídica</option>
+                    <option value="2">Persona Física</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="nombre">Nombre de Empresa o Persona</label>
+                <input type="text" id="nombre" name="nombre" placeholder="" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="email">E-mail de Facturación</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="nombre">Nombre de la Persona de Contacto</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono de la Persona de Contacto</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. +506 8888-8888" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="email">E-mail de la Persona de Contacto</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="text">Número de cédula de la Persona de Contacto</label>
+                <input type="text" id="text" name="text" placeholder="" required>
+            </div>
+            <br>
+
+             <div class="form-group">
+                <label for="Provincia">Provincia</label>
+                <select id="Provincia" name="Provincia" required>
+                    <option value="">Seleccione su provincia</option>
+                    <option value="1">San José</option>
+                    <option value="2">Alajuela</option>
+                    <option value="3">Cartago</option>
+                    <option value="4">Heredia</option>
+                    <option value="5">Guanacaste</option>
+                    <option value="6">Puntarenas</option>
+                    <option value="7">Limón</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej. Calle 123, Ciudad" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="text">Nombre o link al Sitio Web</label>
+                <input type="text" id="text" name="text" placeholder="" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="text">Link a Facebook</label>
+                <input type="text" id="text" name="text" placeholder="" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="text">Link a Instagram</label>
+                <input type="text" id="text" name="text" placeholder="" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="text">Link a Otra Red Social</label>
+                <input type="text" id="text" name="text" placeholder="" required>
+            </div>
+            <br>
+
+
+           
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los <a href="#">términos y condiciones</a></label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
